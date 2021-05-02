@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FirstApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="First App" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Bp-v5-X9J">
+                                <rect key="frame" x="174" y="56" width="185" height="57"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" systemColor="labelColor"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scribble.variable" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="lPo-ah-OKm">
+                                <rect key="frame" x="98" y="55.666666666666657" width="62" height="57.000000000000007"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62" id="WIX-Za-8Ih"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydv-OT-67N">
+                                <rect key="frame" x="141" y="730" width="108" height="54"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Tap me">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UDG-6V-BJI"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HYl-Ar-v8G">
+                                <rect key="frame" x="38" y="447" width="314" height="246"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="This is the first demo app. It shows button, logo, view and some labels. Enjoy and have fun!" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gUm-y1-jIs">
+                                <rect key="frame" x="38" y="138" width="315" height="163"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="163" id="tb9-GW-39S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="App description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ieo-GO-7Yk">
+                                <rect key="frame" x="38" y="329" width="315" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gii-3d-2KV">
+                                <rect key="frame" x="38" y="371" width="314" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="typingDidEnd:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="SuW-4t-xfM"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="Ieo-GO-7Yk" firstAttribute="top" secondItem="gUm-y1-jIs" secondAttribute="bottom" constant="28" id="12x-vO-OGx"/>
+                            <constraint firstItem="gUm-y1-jIs" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="138" id="4eV-MB-Myj"/>
+                            <constraint firstAttribute="bottom" secondItem="HYl-Ar-v8G" secondAttribute="bottom" constant="151" id="7ag-1d-Kfq"/>
+                            <constraint firstItem="HYl-Ar-v8G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Dv-e7-ykg"/>
+                            <constraint firstItem="ydv-OT-67N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EuX-5U-6aj"/>
+                            <constraint firstItem="HYl-Ar-v8G" firstAttribute="leading" secondItem="Gii-3d-2KV" secondAttribute="leading" id="FsX-yl-nJo"/>
+                            <constraint firstItem="lPo-ah-OKm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="98" id="QUa-YJ-xGh"/>
+                            <constraint firstItem="ydv-OT-67N" firstAttribute="top" secondItem="HYl-Ar-v8G" secondAttribute="bottom" constant="37" id="Xm8-iz-gBZ"/>
+                            <constraint firstItem="HYl-Ar-v8G" firstAttribute="leading" secondItem="gUm-y1-jIs" secondAttribute="leading" id="d8I-b0-t8T"/>
+                            <constraint firstItem="HYl-Ar-v8G" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="447" id="jf9-6b-EVz"/>
+                            <constraint firstItem="gUm-y1-jIs" firstAttribute="top" secondItem="lPo-ah-OKm" secondAttribute="bottom" constant="24.333333333333258" id="jne-Iq-rVP"/>
+                            <constraint firstItem="HYl-Ar-v8G" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="38" id="jru-ZC-IRf"/>
+                            <constraint firstItem="lPo-ah-OKm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12.000000000000078" id="k9r-Zf-CMe"/>
+                            <constraint firstItem="lPo-ah-OKm" firstAttribute="centerY" secondItem="2Bp-v5-X9J" secondAttribute="centerY" id="krz-LM-rdZ"/>
+                            <constraint firstItem="Gii-3d-2KV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lFu-xW-xjA"/>
+                            <constraint firstItem="2Bp-v5-X9J" firstAttribute="leading" secondItem="lPo-ah-OKm" secondAttribute="trailing" constant="14" id="oio-ya-6nN"/>
+                            <constraint firstItem="HYl-Ar-v8G" firstAttribute="top" secondItem="Gii-3d-2KV" secondAttribute="bottom" constant="42" id="sqB-Yj-b0D"/>
+                            <constraint firstItem="HYl-Ar-v8G" firstAttribute="leading" secondItem="Ieo-GO-7Yk" secondAttribute="leading" id="swf-8Y-19n"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="appDescription" destination="gUm-y1-jIs" id="TU1-Al-gQl"/>
+                        <outlet property="appDescriptionInputTitle" destination="Ieo-GO-7Yk" id="SC0-q2-3hz"/>
+                        <outlet property="colorView" destination="HYl-Ar-v8G" id="jgY-tn-gcc"/>
+                        <outlet property="descriptionTextField" destination="Gii-3d-2KV" id="hdt-oy-trK"/>
+                        <outlet property="logoImage" destination="lPo-ah-OKm" id="F9s-39-2Bg"/>
+                        <outlet property="logoLabel" destination="2Bp-v5-X9J" id="Qad-mH-YrI"/>
+                        <outlet property="tapMeButton" destination="ydv-OT-67N" id="WLS-KP-9qY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-189.23076923076923" y="76.066350710900466"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="scribble.variable" catalog="system" width="128" height="118"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
